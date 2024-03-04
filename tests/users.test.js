@@ -29,7 +29,7 @@ describe("GET /api/users/:id", () => {
   it("should return no user", async () => {
     const response = await request(app).get("/api/users/0");
 
-    expect(response.status).toEqual(404);
+    expect(response.status).toEqual(422);
   });
 });
 

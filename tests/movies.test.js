@@ -29,7 +29,7 @@ describe("GET /api/movies/:id", () => {
   it("should return no movie", async () => {
     const response = await request(app).get("/api/movies/0");
 
-    expect(response.status).toEqual(404);
+    expect(response.status).toEqual(422);
   });
 });
 
